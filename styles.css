@@ -822,7 +822,7 @@ main {
   width: 6px;
   background: var(--text-gradient-yellow);
   border-radius: 50%;
-  /* box-shadow: 0 0 0 4px var(--jet); */
+  box-shadow: 0 0 0 4px var(--jet);
 }
 
 .timeline-text {
@@ -900,6 +900,29 @@ main {
 /*-----------------------------------*\
   #PORTFOLIO
 \*-----------------------------------*/
+.resume-box {
+  display: inline-block; /* Makes the box tightly fit around the text */
+  background-color: #d4af37; /* Light gold background */
+  padding: 5px 10px; /* Smaller padding */
+  border: 2px solid #d4af37; /* Gold border */
+  border-radius: 6px; /* Rounded corners */
+  font-size: 20px; /* Slightly smaller text */
+  font-family: Arial, sans-serif; /* Font styling */
+  color: #333; /* Dark text for contrast */
+  font-weight: bold; /* Bold text for emphasis */
+  margin: 1px;
+  margin-bottom: 5px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* Subtle shadow */
+  transition: transform 0.2s ease-in-out; /* Smooth hover effect */
+}
+.resume-box:hover {
+  transform: scale(1.05); /* Slight zoom on hover */
+  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.2); /* More prominent shadow on hover */
+}
+
+
+
+
 
 .filter-list { display: none; }
 
