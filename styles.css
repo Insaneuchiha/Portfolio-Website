@@ -783,6 +783,9 @@ main {
   font-size: var(--fs-6);
   margin-left: 45px;
 }
+#timeline-insideitem{
+  color: rgba(255, 255, 255, 0.74);
+}
 
 .timeline-item { position: relative; }
 
@@ -819,13 +822,37 @@ main {
   width: 6px;
   background: var(--text-gradient-yellow);
   border-radius: 50%;
-  box-shadow: 0 0 0 4px var(--jet);
+  /* box-shadow: 0 0 0 4px var(--jet); */
 }
 
 .timeline-text {
   color: var(--light-gray);
   font-weight: var(--fw-300);
   line-height: 1.6;
+}
+
+#inside-bullets {
+  --bullet-color: #6c6d6e;
+  list-style: none;
+  padding-left: 0;
+}
+
+#inside-bullets li {
+  position: relative;
+  padding-left: 25px;
+  margin-bottom: 10px;
+  line-height: 1.5;
+}
+
+#inside-bullets li::before {
+  content: '\2022';
+  color: var(--bullet-color);
+  font-size: 1.5em;
+  position: absolute;
+  left: 0;
+  top: 50%;
+  transform: translateY(-50%);
+  transition: all 0.3s ease;
 }
 
 
